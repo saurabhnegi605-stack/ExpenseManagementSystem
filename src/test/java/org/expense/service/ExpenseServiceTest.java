@@ -26,10 +26,4 @@ public class ExpenseServiceTest {
         assertTrue(result);
         verify(expenseDAO).updateExpense(expense,id);
     }
-
-    void shouldDeleteExpense(){
-        ExpenseDAO expenseDAO = mock(ExpenseDAO.class);
-        ExpenseService expenseService = new ExpenseService(expenseDAO);
-
-    }
 }
